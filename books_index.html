@@ -1,0 +1,30 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <link rel="stylesheet" href="books_styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Book Library</h1>
+        <p>This page sorts and stores any book details that you enter</p>
+        <div class="form-container">
+            <input type="text" id="title" placeholder="Add Title" required>
+            <input type="text" id="author" placeholder="Add Author" required>
+            <input type="number" id="price" placeholder="Add Price" required>
+            <select id="availability">
+                <option value="true">In Stock</option>
+                <option value="false">Sold Out</option>
+            </select>
+            <button onclick="addBook()">Add Book</button>
+        </div>
+        <div class="book-list" id="bookList"></div>
+    </div>
+    <script src="books_script.js"></script>
+</body>
+</html>
